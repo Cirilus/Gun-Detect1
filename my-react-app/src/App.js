@@ -10,7 +10,7 @@ function App() {
   useEffect(() => {
     const fetchImages = async () => {
       try {
-        const response = await axios.get('http://localhost:8000/list-images/');
+        const response = await axios.get('http://45.9.25.190:8000/list-images/');
         const images = response.data.split('<br>');
         setImageURLs(images);
       } catch (error) {
@@ -24,7 +24,7 @@ function App() {
   useEffect(() => {
     const fetchOutputImages = async () => {
       try {
-        const response = await axios.get('http://localhost:8000/output/');
+        const response = await axios.get('http://45.9.25.190:8000/output/');
         const images = response.data.images;
         setOutputImages(images);
       } catch (error) {
@@ -51,7 +51,7 @@ function App() {
     formData.append('file', selectedFile);
 
     try {
-      const response = await axios.post('http://localhost:8000/upload/', formData, {
+      const response = await axios.post('http://45.9.25.190:8000/upload/', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
@@ -77,8 +77,8 @@ function App() {
           <div className="rectangle rectangle-button">
             <label className="upload-label" htmlFor="fileInput">
               <div className="card">
-                <img src={'http://localhost:8000' + imageURL} alt="" style={{ width: '50%' }} />
-                <img src={'http://127.0.0.1:8000' + result} alt="" style={{ width: '50%' }} />
+                <img src={'http://45.9.25.190:8000' + imageURL} alt="" style={{ width: '50%' }} />
+                <img src={'http://45.9.25.190:8000' + result} alt="" style={{ width: '50%' }} />
               </div>
             </label>
           </div>
@@ -102,7 +102,7 @@ function App() {
   {outputImages
     .filter((imageUrl) => imageUrl.includes('11.jpg') || imageUrl.includes('33.jpg') || imageUrl.includes('42.jpg') )
     .map((imageUrl, index) => (
-      <img key={index} src={`http://localhost:8000${imageUrl}`} alt={`Output Image ${index}`} style={{ width: '300px', margin: '5px' }} />
+      <img key={index} src={`http://45.9.25.190:8000${imageUrl}`} alt={`Output Image ${index}`} style={{ width: '300px', margin: '5px' }} />
     ))}
      </div>
 
