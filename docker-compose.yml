@@ -17,7 +17,7 @@ services:
   front:
     build:
       context: my-react-app/
-      dockerfile: .
+      dockerfile: Dockerfile
     container_name: front
     command: >
       bash -c "npm start"
