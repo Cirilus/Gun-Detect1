@@ -1,0 +1,100 @@
+/* style.css */
+/* Existing CSS styles */
+
+.rectangle-container {
+  display: flex;
+  flex-direction: row;
+  justify-content:center; /* Space between rectangles */
+}
+
+.rectangles {
+  display: flex;
+  justify-content: space-between; /* Space between rectangles */
+  width: 100%; /* Make sure it takes the full width */
+}
+
+.rectangle {
+  width: 75%;
+  height: 400px;
+  border-radius: 15px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px;
+  margin: 10px;
+}
+
+.rectangle-text {
+  background-color: #2474F6;
+  margin-right: 10px; /* Add margin for spacing */
+}
+
+.rectangle-button {
+  background-color: #2474F6; /* Orange background color */
+}
+
+.p_help{
+  font-size: 35px;
+}
+
+.p_help2{
+  font-size: 25px;
+}
+
+.card {
+display: flex;
+justify-content: space-between;
+align-items: center; }
+
+.cardDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.upload-button{
+padding: 18px 30px;
+  width: 15%;
+  border-radius: 6%;
+  margin-left: 45%;
+  margin-bottom: 1%;
+ color: white;
+  background-color: #2474F6;}
+
+
+.up{
+   margin-left: 45%;
+  color: white;
+  background-color: #2474F6;
+  width: 15%;
+}
+.upload-text{
+   margin-left: 45%;
+}
+
+.output-images-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.output-images-container img {
+  width: 50%;
+  margin: 5px;
+}
+
+.output-images-container h2 {
+  width: 200px;
+  margin: 5px;
+}
+.rstplink{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: 45%;
+  width: 15%;
+  margin-bottom: 5%;
+}
+
